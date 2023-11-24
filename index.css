@@ -1,0 +1,127 @@
+/* box sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Trebuchet MS", sans-serif;
+    background: url('assets/Index_bg.jpg') center/cover repeat-y;
+    font-size: 15px;
+    overflow: hidden;
+   /* height: 100vh;
+    overflow: auto;*/
+  }
+  
+  /* style cards */
+  
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  article {
+    width: 300px;
+    height: 450px;
+    padding: 42px;
+    position: relative;
+  }
+  
+  article.initial {
+    background-color: rgb(10 , 76, 132);
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    display: flex;
+    width: 100px; 
+    height: 100px; 
+    margin: 0 auto;
+  }
+  
+  .initial img{
+    display: flex;
+    width: 80px; 
+    height: 80px; 
+    margin: 0 auto;
+  }
+  
+  h5 {
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: 800;
+      font-size: 35px;
+      color:rgb(230, 217, 217);
+      margin-bottom: 1.5rem;
+    margin-top: 2.8rem;
+    text-align: center;
+    border: 4px inset rgb(110, 63, 141);
+  }
+  
+  .centre{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    text-align: center;
+    bottom: 60px;
+  }
+  
+  .arrow {
+    line-height: 30px;
+    font-size: 60px;
+    color: rgb(65, 65, 181);
+  }
+  
+  button {
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    padding: 14px;
+    width: 146px;
+    border-radius: 25px;
+    outline: none;
+    border: 2px inset black;
+    font-size: 19px;
+    font-family: "Trebuchet MS", sans-serif;
+    color: rgb(230, 217, 217);
+    transition: all 0.2s ease-in-out;
+    bottom: 80px;
+  }
+  
+  button:hover {
+    background-color: transparent;
+    color: rgb(245, 245, 245);
+  }
+  
+  .arrow:hover {
+    color: rgb(245, 245, 245);
+  }
+  
+  
+  button:active {
+    transform: scale(0.9);
+  }
+  
+  
+  @media only screen and (max-width: 844px) {
+    body {
+      display: flex;
+      width: 100%;
+      overflow: scroll;
+      flex-wrap: wrap;
+    }
+  
+    main {
+      padding: 50px 0;
+      flex-direction: column;
+    }
+}
